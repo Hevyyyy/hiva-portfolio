@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+   <link rel="stylesheet" href="index.css">
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+   <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+  
+  <nav class="p-5 bg-gray-900 md:flex md:items-center md:justify-between">
+    <div class="flex justify-between items-center">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+
+      <span class="text-2xl font-[poppins] cursor-pointer">
+
+        <span class="ml-3 text-xl">Hevy portfolio</span>
+      </span>
+          
+      <span class="text-3xl cursor-pointer ma-2 mx-2 md:hidden block">
+         <ion-icon name="menu" onclick="Menu(this)" ></ion-icon>
+         
+      </span>
+    
+ 
+            <ul class="md:flex md:items-center z=[-1] font-serif md:z-auto md:static absolute  text-gray-600 w-full right-50 md:w-auto md:py-0 
+            py-4 md:pl-20 pl-7 md:opacity-100  opacity-0 top-[-400px] transition-all ease-in duration-500">
+  
+
+          <li class="mx-6 my-6 md:my-0 " >
+        <a href="index.html" class="text-lg  md:border-gray-700	 hover:text-white  duration-500" >HOME</a></li>
+      <li class="mx-6 my-6 md:my-0 ">
+    <a href="skills.html" class="text-lg  md:border-gray-700	 hover:text-white duration-500">SKILLS</a></li>
+    <li class="mx-6 my-6 md:my-0">
+      <a href="showcase.html" class="text-lg  md:border-gray-700	 hover:text-white duration-500">SHOWCASE</a></li>
+    <li class="mx-6 my-6 md:my-0">
+    <a href="contact.html" class="text-lg  md:border-gray-700	 hover:text-white  duration-500">CONTACT</a></li>
+            </ul>
+
+          </div>
+        </nav>
+        
+
+
+
+
+
+
+
+
+
+
+
+        
+        <script>
+          function Menu(e){
+             let list = document.querySelector('ul');
+             if(e.name === 'menu'){
+               e.name = "close";
+               list.classList.add('top-[80px]');
+               list.classList.add('opacity-100');
+             } else {
+               e.name = "menu";
+               list.classList.remove('top-[80px]');
+               list.classList.remove('opacity-100');
+             }
+          }
+        </script>
+        
+
+
+        <body class="bg-black">
+        <section class="text-gray-400 bg-black body-font">
+          <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+              <h1 class="title-font text-center sm:text-3xl  mb-2 font-medium text-white">Hey there, </h1>
+              <h2 class="title-font  sm:text-4xl  mb-4 font-medium text-gray-700">I'm Hibist Demu</h2> 
+              <p class="mb-8 leading-relaxed text-lg">A passionate web design student currently pursuing my degree at St.Mary's University.
+                 With a keen interest in creating visually appealing and user-friendly websites, I am dedicated to honing my skills and expanding my knowledge 
+                 in the ever-evolving field of web design..</p>
+            <p>I believe that great design is not just about aesthetics; it’s about solving problems and enhancing usability. My approach focuses on understanding the needs of users and translating those insights into intuitive designs. 
+              I strive to create websites that are not only beautiful but also functional and accessible to everyone.</p>
+            </div>
+            <div class="lg:max-w-lg lg:w-1/4 md:w-2 w-2">
+              <img class="object-cover object-center rounded" alt="hero" src="/IMG_4292.JPG">
+            </div>
+          </div>
+        </section>
+      
+
+ 
+
+
+
+</body>
+</html>

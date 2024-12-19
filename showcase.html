@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+   <link rel="stylesheet" href="showcasee.css">
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+   <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+  
+  <nav class="p-5 bg-gray-900 md:flex md:items-center md:justify-between">
+    <div class="flex justify-between items-center">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+
+      <span class="text-2xl font-[poppins] cursor-pointer">
+
+        <span class="ml-3 text-xl">Hevy portfolio</span>
+      </span>
+          
+      <span class="text-3xl cursor-pointer ma-2 mx-2 md:hidden block">
+         <ion-icon name="menu" onclick="Menu(this)" ></ion-icon>
+         
+      </span>
+    
+ 
+            <ul class="md:flex md:items-center z=[-1] font-serif md:z-auto md:static absolute  text-gray-600 w-full right-50 md:w-auto md:py-0 
+            py-4 md:pl-20 pl-7 md:opacity-100  opacity-0 top-[-400px] transition-all ease-in duration-500">
+  
+
+          <li class="mx-6 my-6 md:my-0 " >
+        <a href="index.html" class="text-lg  md:border-gray-700	 hover:text-white  duration-500" >HOME</a></li>
+      <li class="mx-6 my-6 md:my-0 ">
+    <a href="skills.html" class="text-lg  md:border-gray-700	 hover:text-white duration-500">SKILLS</a></li>
+    <li class="mx-6 my-6 md:my-0">
+        <a href="showcase.html" class="text-lg  md:border-gray-700	 hover:text-white duration-500">SHOWCASE</a></li>
+    <li class="mx-6 my-6 md:my-0">
+    <a href="contact.html" class="text-lg  md:border-gray-700	 hover:text-white  duration-500">CONTACT</a></li>
+            </ul>
+
+          </div>
+        </nav>
+        
+
+
+
+
+
+
+
+
+
+
+
+        
+        <script>
+          function Menu(e){
+             let list = document.querySelector('ul');
+             if(e.name === 'menu'){
+               e.name = "close";
+               list.classList.add('top-[80px]');
+               list.classList.add('opacity-100');
+             } else {
+               e.name = "menu";
+               list.classList.remove('top-[80px]');
+               list.classList.remove('opacity-100');
+             }
+          }
+        </script>
+        
+
+        <body class="bg-black">
+            <section class="text-gray-600 body-font">
+                <div class="container px-5 py-24 mx-auto">
+                  <div class="flex flex-wrap w-full mb-20">
+                    <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                      <h1 class="sm:text-6xl text-2xl font-medium title-font mb-2 text-gray-900">Projects</h1>
+                      <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+                    </div>
+                    <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">I am currently engaged in multiple projects while working as an intern, where I have successfully completed this particular project and am actively progressing on several others.</p>
+                  </div>
+                  <div class="flex flex-wrap -m-4">
+                    <div class="xl:w-1/4 md:w-1/2 p-4">
+                      <div class="bg-gray-300 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6" src="/Screenshot 2024-12-16 051319.png" alt="content">
+                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Mountscript</h3>
+                       
+                        <p class="leading-relaxed text-base"> a comprehensive UI/UX solution for the Mountt Script Company’s online school platform. This design, created in Figma, features a fully responsive layout that ensures an optimal user experience across all devices. </p>
+                      </div>
+                    </div>
+                    <div class="xl:w-1/4 md:w-1/2 p-4">
+                      <div class="bg-gray-300 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6" src="/Screenshot 2024-12-16 051357.png" alt="content">
+                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Hevy-tour</h3>
+                      
+                        <p class="leading-relaxed text-base">an aesthetically pleasing and highly functional UI/UX interface for Hevy Tour Company. This design focuses on creating an engaging user experience that is both visually appealing and intuitive. Developed in Figma, the interface is fully responsive.</p>
+                      </div>
+                    </div>
+                    <div class="xl:w-1/4 md:w-1/2 p-4">
+                      <div class="bg-gray-300 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6" src="/Screenshot 2024-12-16 051622.png" alt="content">
+                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Mountscript E-learning</h3>
+                        
+                        <p class="leading-relaxed text-base">A fully functional website for Mount Script Company utilizing HTML and CSS. This project involved creating a visually appealing and user-friendly interface that effectively showcases the company’s offerings.</p>
+                      </div>
+                    </div>
+                    <div class="xl:w-1/4 md:w-1/2 p-4">
+                      <div class="bg-gray-300 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6" src="/Screenshot 2024-12-16 051906.png" alt="content">
+                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Interior designing</h3>
+                     
+                        <p class="leading-relaxed text-base"> A sophisticated interior design website utilizing HTML and Tailwind CSS. This project focuses on creating an elegant and visually striking online presence that effectively showcases the portfolio and services of the interior design firm.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+
+
+
+        </body>
+
+
+
+
+
+
+    </body>
+    </html>

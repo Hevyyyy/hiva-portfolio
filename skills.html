@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="skillss.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+
+  <nav class="p-5 bg-gray-900 md:flex md:items-center md:justify-between">
+    <div class="flex justify-between items-center">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+
+      <span class="text-2xl font-[poppins] cursor-pointer">
+
+        <span class="ml-3 text-xl">Hevy portfolio</span>
+      </span>
+          
+      <span class="text-3xl cursor-pointer ma-2 mx-2 md:hidden block">
+         <ion-icon name="menu" onclick="Menu(this)" ></ion-icon>
+         
+      </span>
+
+   
+      
+      <ul class="md:flex md:items-center z=[-1] font-serif md:z-auto md:static absolute  text-gray-600 w-full right-50 md:w-auto md:py-0 
+      py-4 md:pl-20 pl-7 md:opacity-100  opacity-0 top-[-400px] transition-all ease-in duration-500">
+
+
+    <li class="mx-6 my-6 md:my-0 " >
+  <a href="index.html" class="text-lg  md:border-gray-700	 hover:text-white  duration-500" >HOME</a></li>
+<li class="mx-6 my-6 md:my-0 ">
+<a href="skills.html" class="text-lg  md:border-gray-700	 hover:text-white duration-500">SKILLS</a></li>
+<li class="mx-6 my-6 md:my-0">
+  <a href="showcase.html" class="text-lg  md:border-gray-700	 hover:text-white duration-500">SHOWCASE</a></li>
+    <li class="mx-6 my-6 md:my-0">
+<a href="contact.html" class="text-lg  md:border-gray-700	 hover:text-white  duration-500">CONTACT</a></li>
+      </ul>
+
+    </div>
+     
+
+
+  </nav>
+
+<script>
+  function Menu(e){
+     let list = document.querySelector('ul');
+     if(e.name === 'menu'){
+       e.name = "close";
+       list.classList.add('top-[80px]');
+       list.classList.add('opacity-100');
+     } else {
+       e.name = "menu";
+       list.classList.remove('top-[80px]');
+       list.classList.remove('opacity-100');
+     }
+  }
+</script>
+
+
+
+
+
+
+
+ 
+    <body class="bg-black">
+  
+  
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">SKILLS</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">"I'm a highly motivated and skilled on computer science professional with a strong background in web-design,
+               e.g., software development, data analysis, web design. 
+              I'm passionate about web-devlopment and I'm always eager to learn new technologies."</p>
+          </div>
+          <div class="flex flex-wrap">
+            <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+              <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Web Designer:</h2>
+              <p class="leading-relaxed text-base mb-4">Focuses on the visual aspect of websites, including:
+                * User Interface (UI) Design: How the website looks and feels (color schemes, typography, layout, etc.)
+                * User Experience (UX) Design: How easy and enjoyable the website is to use. 
+                * Branding: Creating a consistent visual identity for the website.</p>
+              <a class="text-indigo-500 inline-flex items-center">Learn More
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+              <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Programmer:</h2>
+              <p class="leading-relaxed text-base mb-4"> Focuses on writing code to make websites function. This involves:
+                * Programming Languages: HTML, CSS, JavaScript, Python, PHP, etc.
+                * Frameworks: React, Angular, Vue.js, Django, Laravel, etc.
+                
+             </p>
+              <a class="text-indigo-500 inline-flex items-center">Learn More
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+              <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Software Engineering:</h2>
+              <p class="leading-relaxed text-base mb-4">Software engineering is the systematic approach to designing, developing, and maintaining software systems.
+                 It's about turning ideas into functional, reliable, and maintainable software that meets specific needs.</p>
+              <a class="text-indigo-500 inline-flex items-center">Learn More
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+    
+            <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+              <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Data Structures & Algorithms:</h2>
+              <p class="leading-relaxed text-base mb-4"> The foundation of efficient software design. Mastering algorithms (searching, sorting, etc.) and data structures (arrays, linked lists, trees, graphs) is vital..</p>
+              <a class="text-indigo-500 inline-flex items-center">Learn More
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+    
+            <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+              <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Databases:</h2>
+              <p class="leading-relaxed text-base mb-4">Understanding how data is stored and retrieved is essential.
+                * Relational databases: SQL (Structured Query Language)
+                * NoSQL databases: MongoDB, Cassandra, Redis .</p>
+              <a class="text-indigo-500 inline-flex items-center">Learn More
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+    
+            <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+              <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Operating Systems:</h2>
+              <p class="leading-relaxed text-base mb-4">  Familiarize yourself with how operating systems work (Linux, Windows, macOS). Learn basic command-line interface skills..</p>
+              <a class="text-indigo-500 inline-flex items-center">Learn More
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+    
+            <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+              <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Networking:</h2>
+              <p class="leading-relaxed text-base mb-4">  Networking deals with how computers and devices communicate with each other over a network. It's about connecting devices,
+                 transmitting data, and ensuring reliable communication.</p>
+              <a class="text-indigo-500 inline-flex items-center">Learn More
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+    
+            <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+              <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Computer Architecture:</h2>
+              <p class="leading-relaxed text-base mb-4">Computer architecture focuses on the fundamental design and organization of computer systems. It's about how hardware components (CPU, memory, storage) 
+                work together and how software interacts with them.</p>
+              <a class="text-indigo-500 inline-flex items-center">Learn More
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+    
+
+      </section>
+    
+    </body>
+   
+
+</body>
+
+
+
+
+
+</html>
